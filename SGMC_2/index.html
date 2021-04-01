@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grace Mark Management System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Goggle Font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+
+    <!-- Font Css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Animation Css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        .dropbtn {
+            background-color: yellow;
+            color: black;
+            padding: 10px;
+            font-size: 12px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            background-color: lightgrey;
+            min-width: 200px;
+            display: none;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: orange;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-div">
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo-div bounceInLeft wow" data-wow-duration="2s">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="#">SGMC</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse top-right-menu-ul bounceInRight wow" id="bs-example-navbar-collapse-1" data-wow-duration="4s">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#Home">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn"> Logins</button>
+                                <div class="dropdown-content">
+                                    <a href="./Class_Advisor_Login.html"> Class Advisor </a>
+                                    <a href="./Course_Mentor_Login.html"> Course Mentor </a>
+                                    <a href="./Course_Handling_Faculty_Login.html"> Course Handling Faculty </a>
+                                    <a href="./Exam_Coordinator_Login.html"> Exam Coordinator </a>
+                                    <a href="./Grace_Mark_Allocator_Login.html"> Grace Mark Allocator </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="About us">About us</a></li>
+                        <li><a href="#Contact Us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- End navbar-collapse -->
+            </div>
+            <!-- End container -->
+        </nav>
+
+        <div class="container wow bounceInDown" data-wow-duration="5s">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 text-center slide-text">
+                    <h1>Smart Grace Mark Calculator</h1>
+                    <p>Platform for faculties and mentors to allocate grace marks to the studnets.</p>
+                </div>
+                <!-- End col-md-8-->
+                <div class="col-md-offset-2"></div>
+                <!-- End col-md-offset-2 -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Contanier -->
+
+    </div>
+    <!-- End header-div -->
+
+    <!-- Feature -->
+
+
+    <div class="more-feature-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/emi-calculator_1.png">
+                </div>
+                <!-- End col-md-6-->
+                <div class="col-md-6">
+                    <div class="more-features-div">
+                        <div class="more-features-div-icon"><i class="fa fa-rocket"></i></div>
+                        <h3 class="more-features-div-heading">Comfortable UI</h3>
+                        <div class="more-features-div-description">
+                            We have designed the UI ,that is comfortable for the users.
+                        </div>
+                    </div>
+
+                    <div class="more-features-div">
+                        <div class="more-features-div-icon"><i class="fa fa-rocket"></i></div>
+                        <h3 class="more-features-div-heading">Manage data conviently</h3>
+                        <div class="more-features-div-description">
+                            No need of pens and paper to store the data anymore,YOu can store the students database easily :)
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End col-md-6-->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- ENd container -->
+    </div>
+
+    <!-- End Feature -->
+
+
+    <!-- Services -->
+
+    <div class="container" id="Services">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main_heading">
+                    <h1>Services</h1>
+                    <div class="text-center"><span class="underline"></span></div>
+                </div>
+            </div>
+            <!-- End col-md-12 -->
+        </div>
+        <!-- End row -->
+
+        <div class="col-md-4 services-box-gray col-sm-6">
+            <div class="services-box">
+                <i class="fa fa-support"></i>
+                <h4>24/7 Support</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <!-- End col-md-4-->
+        <div class="col-md-4 col-sm-6">
+            <div class="services-box">
+                <i class="fa fa-rocket"></i>
+                <h4>Easy user Interface</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <!-- End col-md-4-->
+        <div class="col-md-4 services-box-gray col-sm-6">
+            <div class="services-box">
+                <i class="fa fa-cogs"></i>
+                <h4>Easy to Customize</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <!-- End col-md-4-->
+        <div class="col-md-4 col-sm-6">
+            <div class="services-box">
+                <i class="fa fa-magic"></i>
+                <h4>Another Feature</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <!-- End col-md-4-->
+        <div class="col-md-4 services-box-gray col-sm-6">
+            <div class="services-box">
+                <i class="fa fa-support"></i>
+                <h4>24/7 Support</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <!-- End col-md-4-->
+        <div class="col-md-4 col-sm-6">
+            <div class="services-box">
+                <i class="fa fa-rocket"></i>
+                <h4>Calculation made simpler</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <!-- End col-md-4-->
+
+
+    </div>
+    <!-- End container -->
+
+    <!-- End Services -->
+
+    <!-- Call to Action -->
+    <div class="call-action-bg" id="Call-to-Action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main_heading">
+                        <h1>Abstract</h1>
+                        <div class="text-center"><span class="underline"></span></div>
+                    </div>
+                </div>
+                <!-- End col-md-12 -->
+            </div>
+            <!-- End row -->
+
+            <div class="col-md-12">
+                <p> Every year the grace mark allocation becomes a very hectic job for the class advisors after the end of the semester. So, what we have done is an application which allocates grace marks in a very smart way and reduces the work of allocating
+                    grace marks by the class advisors.</p>
+            </div>
+            <!-- End col-md-12-->
+
+        </div>
+        <!-- End container -->
+    </div>
+
+    <!-- End Call to Action -->
+
+
+
+    <!-- Developers -->
+    <div class="container" id="About">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main_heading">
+                    <h1>Developers</h1>
+                    <div class="text-center"><span class="underline"></span></div>
+                </div>
+            </div>
+            <!-- End col-md-12 -->
+        </div>
+        <!-- End row -->
+
+
+        <div class="row">
+            <div class="col-md-4 about-us-box wow fadeInUp animated">
+                <div class="about-us-photo">
+                    <img src="images/1.jpg" alt="">
+                    <div class="about-us-role">Scrum Master</div>
+                </div>
+                <h3>Shashank Bartwaj </h3>
+            </div>
+
+            <div class="col-md-4 about-us-box wow fadeInUp animated">
+                <div class="about-us-photo">
+                    <img src="images/2.jpg" alt="">
+                    <div class="about-us-role">Front end Designer</div>
+                </div>
+                <h3>Arvindh N P </h3>
+            </div>
+
+            <div class="col-md-4 about-us-box wow fadeInUp animated">
+                <div class="about-us-photo">
+                    <img src="images/harsha_3.jpeg" alt="">
+                    <div class="about-us-role">Backend Designer</div>
+                </div>
+                <h3>Harsha Vardhan D</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 about-us-box wow fadeInUp animated">
+                    <div class="about-us-photo">
+                        <img src="images/1.jpg" alt="">
+                        <div class="about-us-role">tester</div>
+                    </div>
+                    <h3>Surekha V</h3>
+                </div>
+
+                <div class="col-md-4 about-us-box wow fadeInUp animated">
+                    <div class="about-us-photo">
+                        <img src="images/2.jpg" alt="">
+                        <div class="about-us-role">Front end Designer</div>
+                    </div>
+                    <h3>Karan T </h3>
+                </div>
+
+            </div>
+            <!-- End row -->
+
+        </div>
+        <!-- End container -->
+        <!-- End About -->
+
+
+        <!-- Testimonial -->
+        <div class="call-action-color" id="Testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main_heading">
+                            <h1>Testimonial</h1>
+                            <div class="text-center"><span class="underline"></span></div>
+                        </div>
+                    </div>
+                    <!-- End col-md-12 -->
+                </div>
+                <!-- End row -->
+
+                <div class="col-md-12">
+                    <p>This environment is really helpful for the teachers to calculate and upgrade marks.</p>
+                </div>
+                <!-- End col-md-12-->
+
+            </div>
+            <!-- End container -->
+        </div>
+
+        <!-- End Testimonial -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></span></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 footer-copyright">
+                        © Import Template by <a href="#">Template Stock</a>.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+        <script type="text/javascript" src="js/jquery-main.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+</body>
+
+</html>

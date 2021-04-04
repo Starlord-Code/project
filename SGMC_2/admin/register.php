@@ -26,6 +26,26 @@ include('includes/navbar.php');
                 <input type="text" name="username" class="form-control" placeholder="Enter Username">
             </div>
             <div class="form-group">
+                <label> Subject </label>
+                <input type="text" name="subject" class="form-control" placeholder="Enter Subject">
+            </div>
+            <div class="form-group">
+                <label> First Name </label>
+                <input type="text" name="fname" class="form-control" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <label> Last Name </label>
+                <input type="text" name="lname" class="form-control" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <label> Phone </label>
+                <input type="text" name="phone" class="form-control" placeholder="Enter phoneNumber">
+            </div>
+            <div class="form-group">
+                <label> DOB </label>
+                <input type="date" name="dob" class="form-control" placeholder="Enter DOB">
+            </div>
+            <div class="form-group">
                 <label>Email</label>
                 <input type="email" name="email" class="form-control" placeholder="Enter Email">
             </div>
@@ -42,13 +62,17 @@ include('includes/navbar.php');
             <div class="form-group">
             <select class="form-control"  name="usertype" aria-label="Default select example" >
               <option selected>Open this select usertype</option>
-              <option value="1">Admin</option>
-              <option value="2">Class Advisor</option>
-              <option value="3">Course HandlingFaculty</option>
-              <option value="4">Course Mentor</option>
-              <option value="5">Event Coordinator</option>
-              <option value="6">Exam Coordinator</option>
+              <option value="Admin">Admin</option>
+              <option value="Class Advisor">Class Advisor</option>
+              <option value="Course HandlingFaculty">Course HandlingFaculty</option>
+              <option value="Course HandlingFaculty">c</option>
+              <option value="Event Coordinator">Event Coordinator</option>
+              <option value="Exam Coordinator">Exam Coordinator</option>
             </select>
+            </div>
+            <div class="form-group">
+                <label> address </label>
+                <input type="text" name="address" class="form-control" placeholder="Enter address">
             </div> 
         
         </div>
@@ -100,9 +124,15 @@ include('includes/navbar.php');
           <tr>
             <th> ID </th>
             <th> Username </th>
+            <th> Subject </th>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Phone </th>
+            <th> DOB </th>
             <th>Email </th>
             <th>Password</th>
             <th>UserType</th>
+            <th> Address </th>
             <th>EDIT </th>
             <th>DELETE </th>
           </tr>
@@ -118,9 +148,15 @@ include('includes/navbar.php');
           <tr>
             <td><?php echo $row ['id']; ?> </td>
             <td> <?php echo $row ['username']; ?></td>
+            <td> <?php echo $row ['subject']; ?></td>
+            <td> <?php echo $row ['firstName']; ?></td>
+            <td> <?php echo $row ['lastName']; ?></td>
+            <td> <?php echo $row ['phone']; ?></td>
+            <td> <?php echo $row ['DOB']; ?></td>
             <td> <?php echo $row ['email']; ?></td>
             <td> <?php echo $row ['password']; ?> </td>
             <td> <?php echo $row ['usertype']; ?> </td>
+            <td> <?php echo $row ['address']; ?></td>
             <td>
                 <form action="register_edit.php" method="post">
                     <input type="hidden" name="edit_id" value="<?php echo $row ['id']; ?>">

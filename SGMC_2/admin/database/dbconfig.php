@@ -5,7 +5,7 @@
 $server_name = "localhost:3304";
 $db_username = "root";
 $db_password = "";
-$db_name = "adminpanel";
+$db_name = "calculator";
 
 $connection = mysqli_connect($server_name,$db_username,$db_password,$db_name);
 
